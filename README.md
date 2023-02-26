@@ -1,5 +1,5 @@
 # sd-colab-commands-browser
-SD Web UI Extension for Run Command Manually
+SD Web UI Extension to Run Command Manually
 
 To install it, clone the repo into the `extensions` directory and run colab:
 
