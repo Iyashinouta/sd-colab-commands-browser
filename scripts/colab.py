@@ -8,7 +8,7 @@ def run(command):
     return out
 
 def on_ui_tabs():     
-    with gr.Blocks() as ccolab:
+    with gr.Blocks() as terminal:
         gr.Markdown(
         """
         ### Google Colab Manually Run Command
@@ -22,5 +22,5 @@ def on_ui_tabs():
                 out_text = gr.Textbox(label="Output Results (no need to scroll down if the output code has appeared, if the output code appears, the code sign is complete)", placeholder="outputs")
                 btn_run = gr.Button("run command")
                 btn_run.click(fn=run, inputs=command, outputs=out_text)
-    return (ccolab, "C Colab", "ccolab"),
+    return (terminal, "Colab Terminal", "terminal"),
 script_callbacks.on_ui_tabs(on_ui_tabs)
