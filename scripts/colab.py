@@ -1,5 +1,4 @@
 import os
-import numpy as np
 import gradio as gr
 from modules import scripts, script_callbacks
 from subprocess import getoutput
